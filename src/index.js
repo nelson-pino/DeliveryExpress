@@ -16,7 +16,7 @@ app.use(express.json());
 app.use("/api/orders", require("./routes/order.routes"));
 
 // Static Files
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../dist")));
 
 // Start Server
 app.listen(app.get("port"), () => {
